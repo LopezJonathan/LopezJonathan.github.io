@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'icomoon';
-    src:    url('fonts/icomoon.eot?5ao1n');
-    src:    url('fonts/icomoon.eot?5ao1n#iefix') format('embedded-opentype'),
-        url('fonts/icomoon.ttf?5ao1n') format('truetype'),
-        url('fonts/icomoon.woff?5ao1n') format('woff'),
-        url('fonts/icomoon.svg?5ao1n#icomoon') format('svg');
+    src:    url('../fonts/icomoon.eot?5ao1n');
+    src:    url('../fonts/icomoon.eot?5ao1n#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?5ao1n') format('truetype'),
+        url('../fonts/icomoon.woff?5ao1n') format('woff'),
+        url('../fonts/icomoon.svg?5ao1n#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -26,17 +26,22 @@
 
 .icon-envelope:before {
     content: "\e900";
+    color: orange;
 }
 .icon-envelope2:before {
     content: "\e901";
+    color: red;
 }
 .icon-headphone:before {
     content: "\e902";
+    color: blue;
 }
 .icon-gamepad:before {
     content: "\e903";
+    color: #d3d3d3;
 }
 .icon-gamepad2:before {
     content: "\e904";
+    color: green;
 }
 
