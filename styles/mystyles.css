@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+.center{
+	margin: auto;
+	width: 50%;
+}
+
+.hide{
+	
+}
+
+.show{
+	
+}
+
+body{
+	
+}
+
+header{
+	
+}
+
+nav{
+	align-content: center;
+}
+
+footer{
+	padding: 20px;
+}
