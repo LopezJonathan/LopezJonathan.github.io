@@ -18,6 +18,10 @@ h1{
 	
 }
 
+p{
+	width: 80%;
+}
+
 a{
 	color: whitesmoke;
 	text-decoration: none;
@@ -70,11 +74,13 @@ footer{
 }
 
 .container-nav{
+	margin: 50% auto;
 }
 
 .container-footer{
 	flex-flow: wrap;
 	justify-content: center;
+	margin-bottom: 0px;
 }
 
 .container-footer span{
@@ -87,7 +93,7 @@ footer{
 }
 
 .examples div{
-	width: 80%;
+	width: 300px;
 	margin: 10px auto;
 }
 
@@ -103,8 +109,9 @@ footer{
 
 /*Tablet Landscape-Mode*/
 @media(min-width: 900px){
-	p{
-		float: right;
+	img{
+		float: left;
+		padding-right: 5%;
 	}
 }
 
