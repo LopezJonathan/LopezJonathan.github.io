@@ -7,10 +7,17 @@
 			@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
 			body { padding: 30px; font-family: 'Open Sans', sans-serif; }
 		</style>
+		
+		<!--CDN link for  TweenMax-->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 	</head>
 	<body>
-
+		
+		<h1>Hello GreenSock</h1>
 		<!-- markup goes here -->
 
 	</body>
+	<script>
+		var testTL = new TweenMax.to('h1', 1, {color: 'blue', opacity:0, repeat:-1, yoyo: true });
+	</script>
 </html>
