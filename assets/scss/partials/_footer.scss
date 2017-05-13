@@ -1,0 +1,18 @@
+/* Scss Document */
+
+footer{
+	text-align: center;
+	color: darkgrey;
+	margin: 10px auto;
+	width: auto;
+}
+
+.container-footer{
+	flex-flow: wrap;
+	justify-content: center;
+	margin-bottom: 0px;
+	
+	span{
+		padding: 5px 7px;
+	}
+}

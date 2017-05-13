@@ -1,9 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-@import 'sassy/assets/scss/partials/variables';
-@import 'sassy/assets/scss/partials/base';
-
 body{
 	color: whitesmoke;
 	background-color: black;

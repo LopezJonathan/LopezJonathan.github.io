@@ -1,0 +1,16 @@
+/* Scss Document */
+
+.examples{
+	display: flex;
+	flex-direction: column;
+	
+	div{
+		width: 300px;
+		margin: 10px auto;
+		
+		img{
+			max-height: 100%;
+			max-width: 100%;
+		}
+	}
+}
