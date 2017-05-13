@@ -1,2 +1,2 @@
-var myvariable = 'goodbye';
+var myvariable = 'hello again';
 alert(myvariable);

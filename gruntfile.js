@@ -23,12 +23,39 @@ module.exports = function(grunt) {
 		},
 		
 		/**
+		* Grunt Contrib cssmin
+		* Combine and minimize CSS files
+		* https://www.npmjs.com/package/grunt-contrib-cssmin
+		*/
+		cssmin: {
+			options: {
+				mergeIntoShorthands: false,
+				roundingPrecision: -1
+			},
+			target: {
+				files: [
+					{
+					expand: true,
+					cwd: 'assets/css/',
+					src: ['*.css', '!*.min.css'],
+					dest: 'css/',
+					ext: '.min.css'
+					}/*,
+					
+					{
+					'css/combinedstyles.css': ['assets/css/styles.css', 'assets/css/svgfonts.css']
+					}*/
+				]
+			}
+		},
+		
+		/**
 		* Grunt Contrib jshint
 		* Validate JavaScript
 		* https://www.npmjs.com/package/grunt-contrib-jshint
 		*/
 		jshint:{
-			all: ['Gruntfile.js', 'assets/js/*.js', './js/*.js']
+			all: ['assets/js/*.js', './js/*.js']
 		},
 		
 		/**
@@ -46,6 +73,22 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+		
+		/**
+		* Grunt Contrib Imagemin
+		* Minimize image size
+		* https://www.npmjs.com/package/grunt-contrib-imagemin
+		*/
+		imagemin: { // Task 
+			dynamic: { // Another target 
+				files: [{
+					expand: true, // Enable dynamic expansion 
+					cwd: 'assets/img/', // Src matches are relative to this path 
+					src: ['**/*.{png,jpg,gif}'], // Actual patterns to match 
+					dest: 'img/' // Destination path prefix 
+				}]
+			}
+		},
 
 		/**
 		* Grunt Contrib Watch
@@ -61,6 +104,16 @@ module.exports = function(grunt) {
 				],
 				tasks: [
 					'sass'
+				]
+			},
+			
+			cssmin: {
+
+				files: [
+					'css/*.css'
+				],
+				tasks: [
+					'cssmin'
 				]
 			},
 			
