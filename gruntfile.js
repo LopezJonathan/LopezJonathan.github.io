@@ -23,6 +23,15 @@ module.exports = function(grunt) {
 		},
 		
 		/**
+		* Grunt Contrib jshint
+		* Validate JavaScript
+		* https://www.npmjs.com/package/grunt-contrib-jshint
+		*/
+		jshint:{
+			all: ['Gruntfile.js', 'assets/js/*.js', './js/*.js']
+		},
+		
+		/**
 		* Grunt Contrib Uglify
 		* Ugflify JavaScript
 		* https://www.npmjs.com/package/grunt-contrib-uglify
@@ -52,6 +61,17 @@ module.exports = function(grunt) {
 				],
 				tasks: [
 					'sass'
+				]
+			},
+			
+			jshint: {
+
+				files: [
+					'assets/js/*.js',
+					'./js/*.js'
+				],
+				tasks: [
+					'jshint'
 				]
 			},
 			
