@@ -1,0 +1,24 @@
+/* Header Scss Document */
+
+.nav-1:hover, 
+.nav-2:hover, 
+.nav-3:hover, 
+.nav-4:hover{
+	border-color: $blue2;
+}
+
+.nav-1, 
+.nav-2, 
+.nav-3, 
+.nav-4{
+	border-style: outset;
+	border-color: $green;
+	border-radius: 15px;
+	width: 120px;
+	margin: 8px auto;
+	text-align: center;
+}
+
+.container-nav{
+	margin: 50% auto;
+}
