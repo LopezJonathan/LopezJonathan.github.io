@@ -2,3 +2,6 @@ Pixabay (images):
 	License - Creative Commons CC0
 	https://pixabay.com/en/service/terms/#usage
 	https://creativecommons.org/publicdomain/zero/1.0/deed.en
+Skroller (JS Library):
+	License - MIT
+	https://github.com/Prinzhorn/skrollr/blob/master/LICENSE.txt
