@@ -1,94 +1,134 @@
-/* Main SCSS Document */
-/* Variables Scss Document */
-/* Color Palette */
-/* Layout */
-/* Base Scss Document */
-/*Divider line for separating sections*/
-/*
-.divider {
-    border-top: 1px solid #ddd;
-    width: 85%;
-    margin: 80px auto 100px;
+@charset "utf-8"; /* CSS Document */
+/*  Page styles  */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-*/
-/*Create breaking whitespace for content*/
-/*.clear {
-    display: block;
-    width: 100%;
-    height: 0;
-    clear: both;
-    font-size: 0;
-    line-height: 0;
-}*/
 body {
-  color: whitesmoke;
-  background-color: black; }
+	font: normal 14px/1.4 Arial, Helvetica, sans-serif;
+}
 
-p {
-  width: 80%; }
+											/********** Header intro **********/
+#skrollr-body {
+	height: 100%;
+	overflow: visible;
+	position: relative;
+}
+#page-intro h1 {
+	text-align: center;
+	color: floralwhite;
+	font: normal 60px 'Droid Serif', sans-serif;
+	padding-top: 24vh;
+}
 
-a {
-  color: whitesmoke;
-  text-decoration: none; }
+#page-intro h2 {
+	text-align: center;
+	color: floralwhite;
+	font: normal 25px 'Droid Serif', sans-serif;
+	padding-top: 2vh;
+}
+.parallax-image .skrollable-between {
+	display: block;
+}
+.parallax-image-wrapper {
+	position: fixed;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	height: 80vh;
+	top: -80vh;
+}
+.parallax-image {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	top: 0;
+}
+.parallax-image.skrollable-between {
+	display: block;
+}
 
-.container {
-  display: flex;
-  flex-direction: column;
-  margin: 10px auto; }
+											/********** Body Text **********/
+.body-text {
+	padding: 200px 0;
+	background-color: #fff;
+	color: #25373C;
+	font-size: 18px;
+	min-height: 100vh;
+	text-align: center;
+}
+.body-text h2 {
+	font-size: 42px;
+	font-weight: normal;
+	margin-bottom: 80px;
+}
+.body-text p {
+	width: 28%;
+	display: inline-block;
+	text-align: left;
+	padding: 20px;
+	color: #45636B;
+}
 
-/* Header Scss Document */
-.nav-1:hover,
-.nav-2:hover,
-.nav-3:hover,
-.nav-4:hover {
-  border-color: dodgerblue; }
+.gap {
+	background: transparent center no-repeat;
+	background-size: cover;
+	height: 80vh;
+}
+.skrollr .gap {
+	background: transparent !important;
+}
 
-.nav-1,
-.nav-2,
-.nav-3,
-.nav-4 {
-  border-style: outset;
-  border-color: limegreen;
-  border-radius: 15px;
-  width: 120px;
-  margin: 8px auto;
-  text-align: center; }
+											/********** Featured Items **********/
+.featured {
+	padding: 150px 0;
+	background-color: #fff;
+	color: #25373C;
+	font-size: 18px;
+	min-height: 100vh;
+	text-align: center;
+}
+.featured h2 {
+	font-size: 42px;
+	margin-bottom: 80px;
+	font-weight: normal;
+}
+.featured div {
+	display: inline-block;
+	width: 30%;
+	margin: 5px;
+	border: 1px solid #ccc;
+	padding: 45px;
+	box-shadow: 1px 1px 1px #ccc, 0 0 30px #eee inset;
+}
+.featured div h4 {
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #425F67;
+	font-weight: normal;
+}
 
-.container-nav {
-  margin: 50% auto; }
+@media (max-width: 800px) {
+	#page-intro h1 {
+		font-size: 42px;
+		padding-top: 15vh;
+	}
+}
 
-/* Footer Scss Document */
-footer {
-  text-align: center;
-  color: darkgrey;
-  margin: 10px auto;
-  width: auto; }
-
-.container-footer {
-  flex-flow: wrap;
-  justify-content: center;
-  margin-bottom: 0px; }
-  .container-footer span {
-    padding: 5px 7px; }
-
-/* Images Scss Document */
-.examples {
-  display: flex;
-  flex-direction: column; }
-  .examples div {
-    width: 300px;
-    margin: 10px auto; }
-    .examples div img {
-      max-height: 100%;
-      max-width: 100%; }
-
-/* Media Queries Scss Document */
-/*Tablet Portrait-Mode*/
-/*Tablet Landscape-Mode*/
-@media (min-width: 900px) {
-  img {
-    float: left;
-    padding-right: 5%; } }
-
-/*Desktop*/
-/*Big Desktop*/
+@media (max-width: 900px) {
+	.featured div {
+		width: 90%;
+		margin-bottom: 30px;
+	}
+	.body-text p {
+		width: 100%;
+	}
+}
