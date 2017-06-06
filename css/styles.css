@@ -17,7 +17,7 @@ body {
 #skrollr-body {
   height: 100%;
   overflow: visible;
-  position: relative; }
+  position: relative;}
 
 #page-intro h1 {
   text-align: center;
@@ -136,8 +136,9 @@ body {
   display: block; }
 
 /* Footer Scss Document */
-footer .footer-left {
-  text-align: center; }
+footer .footer {
+  text-align: center;
+  color: #8f9296; }
 
 footer h3 {
   color: mediumblue;
@@ -146,19 +147,20 @@ footer h3 {
 
 footer .footer-links {
   color: #95A4A9;
-  margin: 22px 0 14px;
+  margin: 6px auto;
   padding: 0; }
 
 footer .footer-links a {
   display: inline-block;
   text-decoration: none;
-  color: #50B575; }
+  color: dodgerblue;
+  font-size: 20px;
+  padding: 0px 2px; }
 
 footer .footer-company-name {
-  color: #8f9296;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
-  margin: 0; }
+  margin: 0 auto 10px auto; }
 
 /* Images Scss Document */
 /* Media Queries Scss Document */
