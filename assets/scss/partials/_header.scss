@@ -1,0 +1,28 @@
+/* Header Scss Document */
+
+.parallax-image .skrollable-between {
+	display: block;
+}
+.parallax-image-wrapper {
+	position: fixed;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	height: 80vh;
+	top: -80vh;
+}
+.parallax-image {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	top: 0;
+}
+.parallax-image.skrollable-between {
+	display: block;
+}

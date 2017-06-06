@@ -1,0 +1,41 @@
+/* Media Queries Scss Document */
+
+/*Tablet Portrait-Mode*/
+//@media (min-width: 600px){
+//	
+//}
+//
+///*Tablet Landscape-Mode*/
+//@media(min-width: 900px){
+//	img{
+//		float: left;
+//		padding-right: 5%;
+//	}
+//}
+//
+///*Desktop*/
+//@media(min-width: 1200px){
+//	
+//}
+//
+///*Big Desktop*/
+//@media(min-width: 1800px){
+//	
+//}
+
+@media (max-width: 800px) {
+	#page-intro h1 {
+		font-size: 42px;
+		padding-top: 15vh;
+	}
+}
+
+@media (max-width: 900px) {
+	.featured div {
+		width: 90%;
+		margin-bottom: 30px;
+	}
+	.body-text p {
+		width: 100%;
+	}
+}
