@@ -5,6 +5,11 @@
 <title>Experimental Design</title>
 <link href="css/svgfonts.css" rel="stylesheet" type="text/css">
 <link href="css/styles.css" rel="stylesheet" type="text/css">
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
 </head>
 
 <body>
@@ -53,26 +58,36 @@
       <div data-100-bottom-top="transform: translateX(-200px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
         <h4>Apps</h4>
       </div>
-      </a> <a href="websites.html">
+      </a> 
+      <a href="websites.html">
       <div data-100-bottom-top="transform: translateY(200px); opacity: 0" data-center-top="transform: translateY(0px); opacity: 1">
         <h4>Websites</h4>
       </div>
-      </a> <a href="projects.html">
+      </a> 
+      <a href="projects.html">
       <div data-100-bottom-top="transform: translateX(200px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
         <h4>Projects</h4>
       </div>
-      </a> </div>
+      </a> 
+    </div>
   </nav>
 </div>
 <footer>
   <div class="footer"> 
     
     <h3>MyLogo</h3>
-    <p class="footer-links"> <a href="#"><span class="icon-github"></span></a> <a href="#"><span class="icon-facebook2"></span></a> <a href="#"><span class="icon-linkedin"></span></a> <a href="#"><span class="icon-mail3"></span></a> <a href="#"><span class="icon-pinterest"></span></a> </p>
+    <ul class="footer-links footer-item"> 
+		<li class="bounce"><a href="#"><span class="icon-github"></span></a></li> 
+		<li class="bounce"><a href="#"><span class="icon-facebook2"></span></a></li> 
+		<li class="bounce"><a href="#"><span class="icon-linkedin"></span></a></li> 
+		<li class="bounce"><a href="#"><span class="icon-mail3"></span></a></li> 
+		<li class="bounce"><a href="#"><span class="icon-pinterest"></span></a></li>
+	</ul>
     <p class="footer-company-name">Brand Name &copy; 2017</p>
   </div>
 </footer>
-<script src="js/skrollr.min.js"></script> 
+<script src="js/skrollr.min.js"></script>
+<script src="js/myscripts.js"></script> 
 <script>
     skrollr.init();
 </script>
