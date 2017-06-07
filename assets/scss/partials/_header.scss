@@ -1,5 +1,18 @@
 /* Header Scss Document */
 
+.main-nav ul{
+	text-align: center;
+}
+.main-nav li{
+	display: inline-block;
+	font-size: 40px;
+	margin: 20px 10px
+}
+.main-nav a{
+	text-decoration: none;
+	color: floralwhite;
+}
+
 .parallax-image .skrollable-between {
 	display: block;
 }
@@ -28,7 +41,7 @@
 }
 
 .animated {
-  animation-duration: 3s;
+  animation-duration: 2.5s;
   animation-fill-mode: both;
 }
 

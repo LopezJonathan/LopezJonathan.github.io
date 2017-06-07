@@ -87,6 +87,18 @@ body {
   text-decoration: none; }
 
 /* Header Scss Document */
+.main-nav ul {
+  text-align: center; }
+
+.main-nav li {
+  display: inline-block;
+  font-size: 40px;
+  margin: 20px 10px; }
+
+.main-nav a {
+  text-decoration: none;
+  color: floralwhite; }
+
 .parallax-image .skrollable-between {
   display: block; }
 
@@ -114,7 +126,7 @@ body {
   display: block; }
 
 .animated {
-  animation-duration: 3s;
+  animation-duration: 2.5s;
   animation-fill-mode: both; }
 
 @keyframes fadeInUpBig {
@@ -158,6 +170,14 @@ footer .footer-company-name {
   margin: 0 auto 10px auto; }
 
 /* Images Scss Document */
+.thumbnail {
+  margin: 20px 10px 20px 5px; }
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 800px; }
+
 /* Media Queries Scss Document */
 /*Tablet Portrait-Mode*/
 @media (max-width: 800px) {
