@@ -28,34 +28,8 @@ body {
 #page-intro h2 {
   text-align: center;
   color: floralwhite;
-  font: normal 25px 'Droid Serif', sans-serif;
+  font: normal 26px 'Droid Serif', sans-serif;
   padding-top: 2vh; }
-
-.parallax-image .skrollable-between {
-  display: block; }
-
-.parallax-image-wrapper {
-  position: fixed;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  height: 80vh;
-  top: -80vh; }
-
-.parallax-image {
-  display: none;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  top: 0; }
-
-.parallax-image.skrollable-between {
-  display: block; }
 
 /********** Body Text **********/
 .body-text {
@@ -138,6 +112,21 @@ body {
 
 .parallax-image.skrollable-between {
   display: block; }
+
+.animated {
+  animation-duration: 3s;
+  animation-fill-mode: both; }
+
+@keyframes fadeInUpBig {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 2000px, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+.fadeInUpBig {
+  animation-name: fadeInUpBig; }
 
 /* Footer Scss Document */
 footer .footer {

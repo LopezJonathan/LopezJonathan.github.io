@@ -26,3 +26,24 @@
 .parallax-image.skrollable-between {
 	display: block;
 }
+
+.animated {
+  animation-duration: 3s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUpBig {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUpBig {
+  animation-name: fadeInUpBig;
+}
