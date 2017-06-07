@@ -99,6 +99,10 @@ body {
   text-decoration: none;
   color: floralwhite; }
 
+.active-link {
+  border-bottom: solid #7D7E75;
+  padding-bottom: 1px; }
+
 .parallax-image .skrollable-between {
   display: block; }
 
